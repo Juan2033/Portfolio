@@ -4,3 +4,10 @@ function toggleMenu() {
   menu.classList.toggle("open");
   icon.classList.toggle("open");
 }
+
+function descargarCV() {
+    const link = document.createElement('a');
+    link.href = './assets/CV_Juan_Ballesteros.pdf';
+    link.download = 'CV_Juan_Ballesteros.pdf';
+    link.click();
+}
