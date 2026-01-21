@@ -53,7 +53,7 @@ a {
 
 a:hover {
   color: grey;
-  text-decoration: underline;
+  text-decoration: none;
   text-underline-offset: 1rem;
   text-decoration-color: rgb(181, 181, 181);
 }
@@ -445,3 +445,106 @@ footer {
 footer p {
   text-align: center;
 }
+
+/* Carrusel */
+.container {
+  max-width: 1200px;
+  margin: 100px auto;
+  padding: 20px;
+  position: relative;
+  text-align: center; /* Centra el contenido del contenedor */
+}
+
+.swiper {
+  width: 100%;
+  padding: 40px 60px; /* Mantén el padding para espacio */
+  margin: 0 auto; /* Centra el swiper horizontalmente */
+}
+
+.card-item {  
+  list-style: none;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+  padding: 20px;
+}
+
+.card-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0,0,0,0.15);
+}
+
+.card-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.card-item a {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  align-items: center;
+}
+
+.card-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.badge {
+  display: inline-block;
+  margin: 15px 20px 5px;
+  padding: 5px 15px;
+  background: #007bff;
+  color: white;
+  border-radius: 20px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.card-title {
+  margin: 10px 20px;
+  font-size: 20px;
+  color: #333;
+}
+
+.card-button {
+  margin: 20px;
+  padding: 10px 20px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Material Symbols Rounded';
+  font-size: 18px;
+}
+
+.card-button:hover {
+  background: #0056b3;
+}
+
+/* Estilos para la paginación y navegación de Swiper */
+.swiper-pagination-bullet {
+  background: #007bff;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #007bff;
+  width: 35px; /* Reducido para flechas más pequeñas */
+  height: 35px; /* Reducido para flechas más pequeñas */
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+/* Posicionamos las flechas fuera del contenedor, ajustadas al nuevo tamaño */
+.swiper-button-prev {
+  left: -17.5px;
+} /* Ajustado
