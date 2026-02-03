@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
@@ -225,168 +224,184 @@
         onclick="location.href='./#projects'"
       />
     </section>
-    <section id="projects">
-      <p class="section__text__p1">Explora mis recientes</p>
-      <h1 class="title">Proyectos</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/BuscadorBanner.png"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">
-              Buscador de autos
-            </h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Juan2033/Buscador-de-vehiculos.git'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://buscador-vehiculos.netlify.app/'"
-              >
-                Demo en vivo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/CarritocomprasBanner.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">
-              Carrito de compras
-            </h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Juan2033/Carrito-de-compras.git'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://carrito-compras-full.netlify.app/'"
-              >
-                Demo en vivo
-              </button>
+    <!-- PROJECTS (Carrusel sin librerías) -->
+<section id="projects">
+  <p class="section__text__p1">Explora mis recientes</p>
+  <h1 class="title">Proyectos</h1>
+
+  <div class="experience-details-container">
+    <div class="carousel" data-carousel>
+      <button class="carousel__btn carousel__btn--prev" type="button" aria-label="Anterior" data-carousel-prev>
+        ‹
+      </button>
+
+      <div class="carousel__viewport" data-carousel-viewport tabindex="0" aria-label="Carrusel de proyectos">
+        <div class="carousel__track" data-carousel-track>
+          <!-- Slide 1 -->
+          <div class="carousel__slide">
+            <div class="details-container color-container card-item">
+              <div class="article-container">
+                <img src="./assets/BuscadorBanner.png" alt="Buscador de autos" class="project-img card-image" />
+              </div>
+              <h2 class="experience-sub-title project-title card-title">Buscador de autos</h2>
+              <div class="btn-container">
+                <button class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/Juan2033/Buscador-de-vehiculos.git'">
+                  Github
+                </button>
+                <button class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://buscador-vehiculos.netlify.app/'">
+                  Demo en vivo
+                </button>
+              </div>
             </div>
           </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/Seguros.png"
-                alt="Project 3"
-                class="project-img"
-              />
+
+          <!-- Slide 2 -->
+          <div class="carousel__slide">
+            <div class="details-container color-container card-item">
+              <div class="article-container">
+                <img src="./assets/CarritocomprasBanner.png" alt="Carrito de compras" class="project-img card-image" />
+              </div>
+              <h2 class="experience-sub-title project-title card-title">Carrito de compras</h2>
+              <div class="btn-container">
+                <button class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/Juan2033/Carrito-de-compras.git'">
+                  Github
+                </button>
+                <button class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://carrito-compras-full.netlify.app/'">
+                  Demo en vivo
+                </button>
+              </div>
             </div>
-            <h2 class="experience-sub-title project-title">Seguros</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Juan2033/Cotiza-seguros.git'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://cotizador-seguros-jcbc.netlify.app/'"
-              >
-                Demo en vivo
-              </button>
-            </div>            
-          </div>          
+          </div>
+
+          <!-- <!-- Slide 3 -->
+          <div class="carousel__slide">
+            <div class="details-container color-container card-item">
+              <div class="article-container">
+                <img src="./assets/Seguros.png" alt="Seguros" class="project-img card-image" />
+              </div>
+              <h2 class="experience-sub-title project-title card-title">Seguros</h2>
+              <div class="btn-container">
+                <button class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/Juan2033/Cotiza-seguros.git'">
+                  Github
+                </button>
+                <button class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://cotizador-seguros-jcbc.netlify.app/'">
+                  Demo en vivo
+                </button>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-    </section>
-    <section id="projects">
-      <p class="section__text__p1">Explora mis recientes</p>
-      <h1 class="title">Sitios web</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/Ugga Street.png"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">
-              Ugga Street
-            </h2>
-            <div class="btn-container">              
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://www.uggastreetburger.com/'"
-              >
-                Demo en vivo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/Concepta Collective.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">
-              Concepta Colletive
-            </h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://www.conceptacollective.es/'"
-              >
-                Demo en vivo
-              </button>
+
+      <button class="carousel__btn carousel__btn--next" type="button" aria-label="Siguiente" data-carousel-next>
+        ›
+      </button>
+
+      <div class="carousel__dots" data-carousel-dots aria-label="Paginación del carrusel"></div>
+    </div>
+  </div>
+
+</section>
+
+
+<section id="websites">
+  <p class="section__text__p1">Explora mis recientes</p>
+  <h1 class="title">Sitios web</h1>
+
+  <div class="experience-details-container">
+    <div class="carousel" data-carousel>
+      <button class="carousel__btn carousel__btn--prev" type="button" aria-label="Anterior" data-carousel-prev>
+        ‹
+      </button>
+
+      <div class="carousel__viewport" data-carousel-viewport tabindex="0" aria-label="Carrusel de sitios web">
+        <div class="carousel__track" data-carousel-track>
+
+          <!-- Slide 1 -->
+          <div class="carousel__slide">
+            <div class="details-container color-container card-item">
+              <div class="article-container">
+                <img
+                  src="./assets/Ugga Street.png"
+                  alt="Ugga Street"
+                  class="project-img card-image"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title card-title">Ugga Street</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://www.uggastreetburger.com/'"
+                >
+                  Demo en vivo
+                </button>
+              </div>
             </div>
           </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/CH.png"
-                alt="Project 3"
-                class="project-img"
-              />
+
+          <!-- Slide 2 -->
+          <div class="carousel__slide">
+            <div class="details-container color-container card-item">
+              <div class="article-container">
+                <img
+                  src="./assets/Concepta Collective.png"
+                  alt="Concepta Collective"
+                  class="project-img card-image"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title card-title">Concepta Collective</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://www.conceptacollective.es/'"
+                >
+                  Demo en vivo
+                </button>
+              </div>
             </div>
-            <h2 class="experience-sub-title project-title">Centro Horitzo</h2>
-            <div class="btn-container">              
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://www.centrohoritzo.es/'"
-              >
-                Demo en vivo
-              </button>
-            </div>            
-          </div>          
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel__slide">
+            <div class="details-container color-container card-item">
+              <div class="article-container">
+                <img
+                  src="./assets/CH.png"
+                  alt="Centro Horitzo"
+                  class="project-img card-image"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title card-title">Centro Horitzo</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://www.centrohoritzo.es/'"
+                >
+                  Demo en vivo
+                </button>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-    </section>
+
+      <button class="carousel__btn carousel__btn--next" type="button" aria-label="Siguiente" data-carousel-next>
+        ›
+      </button>
+
+      <div class="carousel__dots" data-carousel-dots aria-label="Paginación del carrusel"></div>
+    </div>
+  </div>  
+</section>
+
     <section id="contact">
       <p class="section__text__p1">Ponte en contacto</p>
       <h1 class="title">Contáctame</h1>
@@ -421,7 +436,6 @@
         </div>
       </nav>     
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

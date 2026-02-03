@@ -101,3 +101,61 @@
     text-align: justify;
   }
 }
+
+/* Carrusel responsive */
+@media screen and (max-width: 1200px) {
+  .carousel__btn--prev { left: -6px; }
+  .carousel__btn--next { right: -6px; }
+}
+
+@media screen and (max-width: 600px) {
+  /* En móvil se ve mejor sin flechas (swipe + dots) */
+  .carousel__btn {
+    display: none;
+  }
+
+  #projects .project-img,
+  #websites .project-img {
+    height: 160px;
+  }
+
+  .carousel__track {
+    gap: 14px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .carousel {
+    padding: 0 40px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .carousel {
+    padding: 0; /* sin espacio lateral */
+  }
+
+  /* En móvil: sin flechas, solo swipe + dots */
+  .carousel__btn {
+    display: none;
+  }
+
+  #projects .project-img,
+  #websites .project-img {
+    height: 160px;
+  }
+
+  .carousel__track {
+    gap: 14px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .carousel__btn--prev { left: -18px; }
+  .carousel__btn--next { right: -18px; }
+}
+
+@media screen and (max-width: 600px) {
+  .carousel__btn { display: none; }
+}
+
