@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,6 +7,9 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+    <script>
+      window.location.replace("https://juanballesteros.netlify.app/");
+    </script>
   </head>
   <body>
     <nav id="desktop-nav">
@@ -50,7 +53,10 @@
           <button class="btn btn-color-2" onclick="descargarCV()">
             Descargar CV
           </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          <button
+            class="btn btn-color-1"
+            onclick="location.href = './#contact'"
+          >
             Contacto
           </button>
         </div>
@@ -59,13 +65,16 @@
             src="./assets/linkedin.png"
             alt="My LinkedIn profile"
             class="icon"
-            onclick="location.href='https://www.linkedin.com/in/juan-camilo-ballesteros-carmona-113741211/'"
+            onclick="
+              location.href =
+                'https://www.linkedin.com/in/juan-camilo-ballesteros-carmona-113741211/'
+            "
           />
           <img
             src="./assets/github.png"
             alt="My Github profile"
             class="icon"
-            onclick="location.href='https://github.com/'"
+            onclick="location.href = 'https://github.com/'"
           />
         </div>
       </div>
@@ -97,10 +106,12 @@
           </div>
           <div class="text-container">
             <p>
-              Desarrollador Web con más de 3 años de experiencia en el desarrollo de sitios web y optimización SEO. 
-              Especializado en la implementación de soluciones digitales escalables, gestión de CMS y mejora del rendimiento web. 
-              Con formación en ciberseguridad y certificación como Ethical Hacker, aportando un enfoque en seguridad, experiencia de usuario 
-              y resultados medibles.
+              Desarrollador Web con más de 3 años de experiencia en el
+              desarrollo de sitios web y optimización SEO. Especializado en la
+              implementación de soluciones digitales escalables, gestión de CMS
+              y mejora del rendimiento web. Con formación en ciberseguridad y
+              certificación como Ethical Hacker, aportando un enfoque en
+              seguridad, experiencia de usuario y resultados medibles.
             </p>
           </div>
         </div>
@@ -109,7 +120,7 @@
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
-        onclick="location.href='./#experience'"
+        onclick="location.href = './#experience'"
       />
     </section>
     <section id="experience">
@@ -221,424 +232,587 @@
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
-        onclick="location.href='./#projects'"
+        onclick="location.href = './#projects'"
       />
     </section>
     <!-- PROJECTS (Carrusel sin librerías) -->
-<section id="projects">
-  <p class="section__text__p1">Explora mis recientes</p>
-  <h1 class="title">Proyectos</h1>
+    <section id="projects">
+      <p class="section__text__p1">Explora mis recientes</p>
+      <h1 class="title">Proyectos</h1>
 
-  <div class="experience-details-container">
-    <div class="carousel" data-carousel>
-      <button class="carousel__btn carousel__btn--prev" type="button" aria-label="Anterior" data-carousel-prev>
-        ‹
-      </button>
+      <div class="experience-details-container">
+        <div class="carousel" data-carousel>
+          <button
+            class="carousel__btn carousel__btn--prev"
+            type="button"
+            aria-label="Anterior"
+            data-carousel-prev
+          >
+            ‹
+          </button>
 
-      <div class="carousel__viewport" data-carousel-viewport tabindex="0" aria-label="Carrusel de proyectos">
-        <div class="carousel__track" data-carousel-track>
-          <!-- Slide 1 -->
-          <div class="carousel__slide">
-            <div class="details-container color-container card-item">
-              <div class="article-container">
-                <img src="./assets/BuscadorBanner.png" alt="Buscador de autos" class="project-img card-image" />
+          <div
+            class="carousel__viewport"
+            data-carousel-viewport
+            tabindex="0"
+            aria-label="Carrusel de proyectos"
+          >
+            <div class="carousel__track" data-carousel-track>
+              <!-- Slide 1 -->
+              <div class="carousel__slide">
+                <div class="details-container color-container card-item">
+                  <div class="article-container">
+                    <img
+                      src="./assets/BuscadorBanner.png"
+                      alt="Buscador de autos"
+                      class="project-img card-image"
+                    />
+                  </div>
+                  <h2 class="experience-sub-title project-title card-title">
+                    Buscador de autos
+                  </h2>
+                  <div class="btn-container">
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="
+                        location.href =
+                          'https://github.com/Juan2033/Buscador-de-vehiculos.git'
+                      "
+                    >
+                      Github
+                    </button>
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="
+                        location.href =
+                          'https://buscador-vehiculos.netlify.app/'
+                      "
+                    >
+                      Demo en vivo
+                    </button>
+                  </div>
+                </div>
               </div>
-              <h2 class="experience-sub-title project-title card-title">Buscador de autos</h2>
-              <div class="btn-container">
-                <button class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/Juan2033/Buscador-de-vehiculos.git'">
-                  Github
-                </button>
-                <button class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://buscador-vehiculos.netlify.app/'">
-                  Demo en vivo
-                </button>
+
+              <!-- Slide 2 -->
+              <div class="carousel__slide">
+                <div class="details-container color-container card-item">
+                  <div class="article-container">
+                    <img
+                      src="./assets/CarritocomprasBanner.png"
+                      alt="Carrito de compras"
+                      class="project-img card-image"
+                    />
+                  </div>
+                  <h2 class="experience-sub-title project-title card-title">
+                    Carrito de compras
+                  </h2>
+                  <div class="btn-container">
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="
+                        location.href =
+                          'https://github.com/Juan2033/Carrito-de-compras.git'
+                      "
+                    >
+                      Github
+                    </button>
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="
+                        location.href =
+                          'https://carrito-compras-full.netlify.app/'
+                      "
+                    >
+                      Demo en vivo
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 3 -->
+              <div class="carousel__slide">
+                <div class="details-container color-container card-item">
+                  <div class="article-container">
+                    <img
+                      src="./assets/Seguros.png"
+                      alt="Seguros"
+                      class="project-img card-image"
+                    />
+                  </div>
+                  <h2 class="experience-sub-title project-title card-title">
+                    Cotizador de seguros
+                  </h2>
+                  <div class="btn-container">
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="
+                        location.href =
+                          'https://github.com/Juan2033/Cotiza-seguros.git'
+                      "
+                    >
+                      Github
+                    </button>
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="
+                        location.href =
+                          'https://cotizador-seguros-jcbc.netlify.app/'
+                      "
+                    >
+                      Demo en vivo
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 4-->
+              <div class="carousel__slide">
+                <div class="details-container color-container card-item">
+                  <div class="article-container">
+                    <img
+                      src="./assets/control-gastos.png"
+                      alt="Seguros"
+                      class="project-img card-image"
+                    />
+                  </div>
+                  <h2 class="experience-sub-title project-title card-title">
+                    Control de gastos
+                  </h2>
+                  <div class="btn-container">
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="
+                        location.href =
+                          'https://github.com/Juan2033/Control-de-gastos.git'
+                      "
+                    >
+                      Github
+                    </button>
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="
+                        location.href =
+                          'https://control-de-gastos-jcbc.netlify.app/'
+                      "
+                    >
+                      Demo en vivo
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 5-->
+              <div class="carousel__slide">
+                <div class="details-container color-container card-item">
+                  <div class="article-container">
+                    <img
+                      src="./assets/FormularioBanner.png"
+                      alt="Seguros"
+                      class="project-img card-image"
+                    />
+                  </div>
+                  <h2 class="experience-sub-title project-title card-title">
+                    Formulario envio email
+                  </h2>
+                  <div class="btn-container">
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="
+                        location.href =
+                          'https://github.com/Juan2033/Formulario-envio-email.git'
+                      "
+                    >
+                      Github
+                    </button>
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="
+                        location.href =
+                          'https://formulario-envio-email.netlify.app/'
+                      "
+                    >
+                      Demo en vivo
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 6-->
+              <div class="carousel__slide">
+                <div class="details-container color-container card-item">
+                  <div class="article-container">
+                    <img
+                      src="./assets/AdmCitas.png"
+                      alt="Seguros"
+                      class="project-img card-image"
+                    />
+                  </div>
+                  <h2 class="experience-sub-title project-title card-title">
+                    Administrador de citas
+                  </h2>
+                  <div class="btn-container">
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="
+                        location.href =
+                          'https://github.com/Juan2033/Administrador-De-Citas.git'
+                      "
+                    >
+                      Github
+                    </button>
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="
+                        location.href =
+                          'https://administrador-de-citas-jcbc.netlify.app/'
+                      "
+                    >
+                      Demo en vivo
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
 
-          <!-- Slide 2 -->
-          <div class="carousel__slide">
-            <div class="details-container color-container card-item">
-              <div class="article-container">
-                <img src="./assets/CarritocomprasBanner.png" alt="Carrito de compras" class="project-img card-image" />
-              </div>
-              <h2 class="experience-sub-title project-title card-title">Carrito de compras</h2>
-              <div class="btn-container">
-                <button class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/Juan2033/Carrito-de-compras.git'">
-                  Github
-                </button>
-                <button class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://carrito-compras-full.netlify.app/'">
-                  Demo en vivo
-                </button>
-              </div>
-            </div>
-          </div>
+          <button
+            class="carousel__btn carousel__btn--next"
+            type="button"
+            aria-label="Siguiente"
+            data-carousel-next
+          >
+            ›
+          </button>
 
-          <!-- Slide 3 -->
-          <div class="carousel__slide">
-            <div class="details-container color-container card-item">
-              <div class="article-container">
-                <img src="./assets/Seguros.png" alt="Seguros" class="project-img card-image" />
-              </div>
-              <h2 class="experience-sub-title project-title card-title">Cotizador de seguros</h2>
-              <div class="btn-container">
-                <button class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/Juan2033/Cotiza-seguros.git'">
-                  Github
-                </button>
-                <button class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://cotizador-seguros-jcbc.netlify.app/'">
-                  Demo en vivo
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <!-- Slide 4-->
-          <div class="carousel__slide">
-            <div class="details-container color-container card-item">
-              <div class="article-container">
-                <img src="./assets/control-gastos.png" alt="Seguros" class="project-img card-image" />
-              </div>
-              <h2 class="experience-sub-title project-title card-title">Control de gastos</h2>
-              <div class="btn-container">
-                <button class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/Juan2033/Control-de-gastos.git'">
-                  Github
-                </button>
-                <button class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://control-de-gastos-jcbc.netlify.app/'">
-                  Demo en vivo
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <!-- Slide 5-->
-          <div class="carousel__slide">
-            <div class="details-container color-container card-item">
-              <div class="article-container">
-                <img src="./assets/FormularioBanner.png" alt="Seguros" class="project-img card-image" />
-              </div>
-              <h2 class="experience-sub-title project-title card-title">Formulario envio email</h2>
-              <div class="btn-container">
-                <button class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/Juan2033/Formulario-envio-email.git'">
-                  Github
-                </button>
-                <button class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://formulario-envio-email.netlify.app/'">
-                  Demo en vivo
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <!-- Slide 6-->
-          <div class="carousel__slide">
-            <div class="details-container color-container card-item">
-              <div class="article-container">
-                <img src="./assets/AdmCitas.png" alt="Seguros" class="project-img card-image" />
-              </div>
-              <h2 class="experience-sub-title project-title card-title">Administrador de citas</h2>
-              <div class="btn-container">
-                <button class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/Juan2033/Administrador-De-Citas.git'">
-                  Github
-                </button>
-                <button class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://administrador-de-citas-jcbc.netlify.app/'">
-                  Demo en vivo
-                </button>
-              </div>
-            </div>
-          </div>
-
+          <div
+            class="carousel__dots"
+            data-carousel-dots
+            aria-label="Paginación del carrusel"
+          ></div>
         </div>
       </div>
+    </section>
 
-      <button class="carousel__btn carousel__btn--next" type="button" aria-label="Siguiente" data-carousel-next>
-        ›
-      </button>
+    <section id="websites">
+      <p class="section__text__p1">Explora mis recientes</p>
+      <h1 class="title">Sitios web</h1>
 
-      <div class="carousel__dots" data-carousel-dots aria-label="Paginación del carrusel"></div>
-    </div>
-  </div>
+      <div class="experience-details-container">
+        <div class="carousel" data-carousel>
+          <button
+            class="carousel__btn carousel__btn--prev"
+            type="button"
+            aria-label="Anterior"
+            data-carousel-prev
+          >
+            ‹
+          </button>
 
-</section>
-
-
-<section id="websites">
-  <p class="section__text__p1">Explora mis recientes</p>
-  <h1 class="title">Sitios web</h1>
-
-  <div class="experience-details-container">
-    <div class="carousel" data-carousel>
-      <button class="carousel__btn carousel__btn--prev" type="button" aria-label="Anterior" data-carousel-prev>
-        ‹
-      </button>
-
-      <div class="carousel__viewport" data-carousel-viewport tabindex="0" aria-label="Carrusel de sitios web">
-        <div class="carousel__track" data-carousel-track>
-
-          <!-- Slide 1 -->
-          <div class="carousel__slide">
-            <div class="details-container color-container card-item">
-              <div class="article-container">
-                <img
-                  src="./assets/Ugga Street.png"
-                  alt="Ugga Street"
-                  class="project-img card-image"
-                />
+          <div
+            class="carousel__viewport"
+            data-carousel-viewport
+            tabindex="0"
+            aria-label="Carrusel de sitios web"
+          >
+            <div class="carousel__track" data-carousel-track>
+              <!-- Slide 1 -->
+              <div class="carousel__slide">
+                <div class="details-container color-container card-item">
+                  <div class="article-container">
+                    <img
+                      src="./assets/Ugga Street.png"
+                      alt="Ugga Street"
+                      class="project-img card-image"
+                    />
+                  </div>
+                  <h2 class="experience-sub-title project-title card-title">
+                    Ugga Street
+                  </h2>
+                  <div class="btn-container">
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="
+                        location.href = 'https://www.uggastreetburger.com/'
+                      "
+                    >
+                      Demo en vivo
+                    </button>
+                  </div>
+                </div>
               </div>
-              <h2 class="experience-sub-title project-title card-title">Ugga Street</h2>
-              <div class="btn-container">
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://www.uggastreetburger.com/'"
-                >
-                  Demo en vivo
-                </button>
+
+              <!-- Slide 2 -->
+              <div class="carousel__slide">
+                <div class="details-container color-container card-item">
+                  <div class="article-container">
+                    <img
+                      src="./assets/Concepta Collective.png"
+                      alt="Concepta Collective"
+                      class="project-img card-image"
+                    />
+                  </div>
+                  <h2 class="experience-sub-title project-title card-title">
+                    Concepta Collective
+                  </h2>
+                  <div class="btn-container">
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="
+                        location.href = 'https://www.conceptacollective.es/'
+                      "
+                    >
+                      Demo en vivo
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 3 -->
+              <div class="carousel__slide">
+                <div class="details-container color-container card-item">
+                  <div class="article-container">
+                    <img
+                      src="./assets/CH.png"
+                      alt="Centro Horitzo"
+                      class="project-img card-image"
+                    />
+                  </div>
+                  <h2 class="experience-sub-title project-title card-title">
+                    Centro Horitzo
+                  </h2>
+                  <div class="btn-container">
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="location.href = 'https://www.centrohoritzo.es/'"
+                    >
+                      Demo en vivo
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 4 -->
+              <div class="carousel__slide">
+                <div class="details-container color-container card-item">
+                  <div class="article-container">
+                    <img
+                      src="./assets/Dairys.png"
+                      alt="Centro Horitzo"
+                      class="project-img card-image"
+                    />
+                  </div>
+                  <h2 class="experience-sub-title project-title card-title">
+                    Dairys Marquez
+                  </h2>
+                  <div class="btn-container">
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="
+                        location.href =
+                          'https://www.dairysmarquezbellezaintegral.com/'
+                      "
+                    >
+                      Demo en vivo
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 5 -->
+              <div class="carousel__slide">
+                <div class="details-container color-container card-item">
+                  <div class="article-container">
+                    <img
+                      src="./assets/Fran&Moreno.png"
+                      alt="Centro Horitzo"
+                      class="project-img card-image"
+                    />
+                  </div>
+                  <h2 class="experience-sub-title project-title card-title">
+                    Fran & Moreno
+                  </h2>
+                  <div class="btn-container">
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="location.href = 'https://franymoreno.com/'"
+                    >
+                      Demo en vivo
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 6 -->
+              <div class="carousel__slide">
+                <div class="details-container color-container card-item">
+                  <div class="article-container">
+                    <img
+                      src="./assets/Tacoo.png"
+                      alt="Centro Horitzo"
+                      class="project-img card-image"
+                    />
+                  </div>
+                  <h2 class="experience-sub-title project-title card-title">
+                    Taco and Droll
+                  </h2>
+                  <div class="btn-container">
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="location.href = 'https://www.tacoandroll.pro/'"
+                    >
+                      Demo en vivo
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 7 -->
+              <div class="carousel__slide">
+                <div class="details-container color-container card-item">
+                  <div class="article-container">
+                    <img
+                      src="./assets/Flavia.png"
+                      alt="Centro Horitzo"
+                      class="project-img card-image"
+                    />
+                  </div>
+                  <h2 class="experience-sub-title project-title card-title">
+                    Flavia
+                  </h2>
+                  <div class="btn-container">
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="
+                        location.href =
+                          'https://www.flaviaquirogacomunicacion.com/'
+                      "
+                    >
+                      Demo en vivo
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 8 -->
+              <div class="carousel__slide">
+                <div class="details-container color-container card-item">
+                  <div class="article-container">
+                    <img
+                      src="./assets/Ous.png"
+                      alt="Centro Horitzo"
+                      class="project-img card-image"
+                    />
+                  </div>
+                  <h2 class="experience-sub-title project-title card-title">
+                    Ous la salut
+                  </h2>
+                  <div class="btn-container">
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="location.href = 'https://www.ouslasalut.com/'"
+                    >
+                      Demo en vivo
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 9 -->
+              <div class="carousel__slide">
+                <div class="details-container color-container card-item">
+                  <div class="article-container">
+                    <img
+                      src="./assets/Glia.png"
+                      alt="Centro Horitzo"
+                      class="project-img card-image"
+                    />
+                  </div>
+                  <h2 class="experience-sub-title project-title card-title">
+                    GLIA Formaciones
+                  </h2>
+                  <div class="btn-container">
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="
+                        location.href = 'https://www.gliaformaciones.es/'
+                      "
+                    >
+                      Demo en vivo
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 10 -->
+              <div class="carousel__slide">
+                <div class="details-container color-container card-item">
+                  <div class="article-container">
+                    <img
+                      src="./assets/Koxka.png"
+                      alt="Centro Horitzo"
+                      class="project-img card-image"
+                    />
+                  </div>
+                  <h2 class="experience-sub-title project-title card-title">
+                    KOXKA
+                  </h2>
+                  <div class="btn-container">
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="location.href = 'https://www.koxkaleioa.net/'"
+                    >
+                      Demo en vivo
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 11 -->
+              <div class="carousel__slide">
+                <div class="details-container color-container card-item">
+                  <div class="article-container">
+                    <img
+                      src="./assets/ANTI-ASFIXIA.png"
+                      alt="Centro Horitzo"
+                      class="project-img card-image"
+                    />
+                  </div>
+                  <h2 class="experience-sub-title project-title card-title">
+                    ANTI-ASFIXIA
+                  </h2>
+                  <div class="btn-container">
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="
+                        location.href = 'https://www.antiasfixiamara.com/'
+                      "
+                    >
+                      Demo en vivo
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
 
-          <!-- Slide 2 -->
-          <div class="carousel__slide">
-            <div class="details-container color-container card-item">
-              <div class="article-container">
-                <img
-                  src="./assets/Concepta Collective.png"
-                  alt="Concepta Collective"
-                  class="project-img card-image"
-                />
-              </div>
-              <h2 class="experience-sub-title project-title card-title">Concepta Collective</h2>
-              <div class="btn-container">
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://www.conceptacollective.es/'"
-                >
-                  Demo en vivo
-                </button>
-              </div>
-            </div>
-          </div>
+          <button
+            class="carousel__btn carousel__btn--next"
+            type="button"
+            aria-label="Siguiente"
+            data-carousel-next
+          >
+            ›
+          </button>
 
-          <!-- Slide 3 -->
-          <div class="carousel__slide">
-            <div class="details-container color-container card-item">
-              <div class="article-container">
-                <img
-                  src="./assets/CH.png"
-                  alt="Centro Horitzo"
-                  class="project-img card-image"
-                />
-              </div>
-              <h2 class="experience-sub-title project-title card-title">Centro Horitzo</h2>
-              <div class="btn-container">
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://www.centrohoritzo.es/'"
-                >
-                  Demo en vivo
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <!-- Slide 4 -->
-          <div class="carousel__slide">
-            <div class="details-container color-container card-item">
-              <div class="article-container">
-                <img
-                  src="./assets/Dairys.png"
-                  alt="Centro Horitzo"
-                  class="project-img card-image"
-                />
-              </div>
-              <h2 class="experience-sub-title project-title card-title">Dairys Marquez</h2>
-              <div class="btn-container">
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://www.dairysmarquezbellezaintegral.com/'"
-                >
-                  Demo en vivo
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <!-- Slide 5 -->
-          <div class="carousel__slide">
-            <div class="details-container color-container card-item">
-              <div class="article-container">
-                <img
-                  src="./assets/Fran&Moreno.png"
-                  alt="Centro Horitzo"
-                  class="project-img card-image"
-                />
-              </div>
-              <h2 class="experience-sub-title project-title card-title">Fran & Moreno</h2>
-              <div class="btn-container">
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://franymoreno.com/'"
-                >
-                  Demo en vivo
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <!-- Slide 6 -->
-          <div class="carousel__slide">
-            <div class="details-container color-container card-item">
-              <div class="article-container">
-                <img
-                  src="./assets/Taco.png"
-                  alt="Centro Horitzo"
-                  class="project-img card-image"
-                />
-              </div>
-              <h2 class="experience-sub-title project-title card-title">Taco and Droll</h2>
-              <div class="btn-container">
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://www.tacoandroll.pro/'"
-                >
-                  Demo en vivo
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <!-- Slide 7 -->
-          <div class="carousel__slide">
-            <div class="details-container color-container card-item">
-              <div class="article-container">
-                <img
-                  src="./assets/Flavia.png"
-                  alt="Centro Horitzo"
-                  class="project-img card-image"
-                />
-              </div>
-              <h2 class="experience-sub-title project-title card-title">Flavia</h2>
-              <div class="btn-container">
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://www.flaviaquirogacomunicacion.com/'"
-                >
-                  Demo en vivo
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <!-- Slide 8 -->
-          <div class="carousel__slide">
-            <div class="details-container color-container card-item">
-              <div class="article-container">
-                <img
-                  src="./assets/Ous.png"
-                  alt="Centro Horitzo"
-                  class="project-img card-image"
-                />
-              </div>
-              <h2 class="experience-sub-title project-title card-title">Ous la salut</h2>
-              <div class="btn-container">
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://www.ouslasalut.com/'"
-                >
-                  Demo en vivo
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <!-- Slide 9 -->
-          <div class="carousel__slide">
-            <div class="details-container color-container card-item">
-              <div class="article-container">
-                <img
-                  src="./assets/Glia.png"
-                  alt="Centro Horitzo"
-                  class="project-img card-image"
-                />
-              </div>
-              <h2 class="experience-sub-title project-title card-title">GLIA Formaciones</h2>
-              <div class="btn-container">
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://www.gliaformaciones.es/'"
-                >
-                  Demo en vivo
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <!-- Slide 10 -->
-          <div class="carousel__slide">
-            <div class="details-container color-container card-item">
-              <div class="article-container">
-                <img
-                  src="./assets/Koxka.png"
-                  alt="Centro Horitzo"
-                  class="project-img card-image"
-                />
-              </div>
-              <h2 class="experience-sub-title project-title card-title">KOXKA</h2>
-              <div class="btn-container">
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://www.koxkaleioa.net/'"
-                >
-                  Demo en vivo
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <!-- Slide 11 -->
-          <div class="carousel__slide">
-            <div class="details-container color-container card-item">
-              <div class="article-container">
-                <img
-                  src="./assets/ANTI-ASFIXIA.png"
-                  alt="Centro Horitzo"
-                  class="project-img card-image"
-                />
-              </div>
-              <h2 class="experience-sub-title project-title card-title">ANTI-ASFIXIA</h2>
-              <div class="btn-container">
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://www.antiasfixiamara.com/'"
-                >
-                  Demo en vivo
-                </button>
-              </div>
-            </div>
-          </div>
-
-
-
+          <div
+            class="carousel__dots"
+            data-carousel-dots
+            aria-label="Paginación del carrusel"
+          ></div>
         </div>
       </div>
-
-      <button class="carousel__btn carousel__btn--next" type="button" aria-label="Siguiente" data-carousel-next>
-        ›
-      </button>
-
-      <div class="carousel__dots" data-carousel-dots aria-label="Paginación del carrusel"></div>
-    </div>
-  </div>  
-</section>
+    </section>
 
     <section id="contact">
       <p class="section__text__p1">Ponte en contacto</p>
@@ -650,7 +824,11 @@
             alt="Email icon"
             class="icon contact-icon email-icon"
           />
-          <p><a href="mailto:examplemail@gmail.com">jballesteroscarmona4@gmail.com</a></p>
+          <p>
+            <a href="mailto:examplemail@gmail.com"
+              >jballesteroscarmona4@gmail.com</a
+            >
+          </p>
         </div>
         <div class="contact-info-container">
           <img
@@ -658,7 +836,12 @@
             alt="LinkedIn icon"
             class="icon contact-icon"
           />
-          <p><a href="https://www.linkedin.com/in/juan-camilo-ballesteros-carmona-113741211/">LinkedIn</a></p>
+          <p>
+            <a
+              href="https://www.linkedin.com/in/juan-camilo-ballesteros-carmona-113741211/"
+              >LinkedIn</a
+            >
+          </p>
         </div>
       </div>
     </section>
@@ -672,7 +855,7 @@
             <li><a href="#contact">Contacto</a></li>
           </ul>
         </div>
-      </nav>     
+      </nav>
     </footer>
     <script src="script.js"></script>
   </body>
